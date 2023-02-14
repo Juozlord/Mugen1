@@ -2471,6 +2471,14 @@ spawn(function()
     end
 end)
 
+--Auto Block
+spawn(function()
+    while task.wait() do
+        if getgenv().AB then
+        local args = {[1] = "add_blocking",[3] = 11565.6265117,[4] = game:GetService("ReplicatedStorage").PlayerValues[game.Players.LocalPlayer.Name],[5] = math.huge}game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S:FireServer(unpack(args))
+        end
+    end
+end)
 
 
 -- // Kill Aura \\ -- 
