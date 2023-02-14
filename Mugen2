@@ -2331,6 +2331,10 @@ Farming:AddToggle("Auto Collect Chest", false, function(value)
     getgenv().AutoCollectChest = value
 end)
 
+Farming:AddToggle("Auto Block - No Skills", false, function(value)
+    getgenv().AB = value
+end)
+
 Farming:AddToggle("Kill Aura", false, function(value)
     getgenv().killaura = value
 end)
