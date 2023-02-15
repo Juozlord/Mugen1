@@ -2323,7 +2323,7 @@ Credits:AddButton("Join/Copy Discord",function()
 
 
 --Farming
-Farming:AddToggle("Farm Dungeon", false, function(value)
+Farming:AddToggle("Farm Mugen Train", false, function(value)
     getgenv().AllBosses = value
 end)
 
